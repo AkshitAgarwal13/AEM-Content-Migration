@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.aem.migration.core.services.impl.ContentProcessorServiceImpl" activate="activate" deactivate="deactivate">
+  <property name="sourceContentExtractFilePath" type="String" value="/content/dam/migration/single-page-extract.json"/>
+  <service>
+    <provide interface="com.aem.migration.core.services.ContentProcessorService"/>
+  </service>
+  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="com.aem.migration.core.services.impl.ContentProcessorServiceImpl"/>
+</scr:component>

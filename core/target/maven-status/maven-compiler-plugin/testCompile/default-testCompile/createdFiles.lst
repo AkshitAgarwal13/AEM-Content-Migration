@@ -1,0 +1,7 @@
+com\aem\migration\core\servlets\SimpleServletTest.class
+com\aem\migration\core\testcontext\AppAemContext.class
+com\aem\migration\core\schedulers\SimpleScheduledTaskTest.class
+com\aem\migration\core\listeners\SimpleResourceListenerTest.class
+com\aem\migration\core\filters\LoggingFilterTest.class
+com\aem\migration\core\models\HelloWorldModelTest.class
+com\aem\migration\core\testcontext\AppAemContext$1.class

@@ -1,0 +1,4 @@
+com\aem\migration\it\tests\GetPageIT.class
+com\aem\migration\it\tests\PublishPageValidationIT.class
+com\aem\migration\it\tests\CreatePageIT.class
+com\aem\migration\it\tests\HtmlUnitClient.class

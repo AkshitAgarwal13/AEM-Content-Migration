@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Migration -POC - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2022-07-21T11:28:49.194Z</entry>
+<entry key="groupId">com.aem.migration</entry>
+<entry key="name">aem-content-migration.all</entry>
+<entry key="description">All content package for Migration -POC</entry>
+<entry key="artifactId">aem-content-migration.all</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.aem.migration</entry>
+</properties>

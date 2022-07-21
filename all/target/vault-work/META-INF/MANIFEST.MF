@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 18
+Implementation-Title: Migration -POC - All
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.aem.migration:aem-content-migration.all:0.0.1-SN
+ APSHOT
+Content-Package-Description: All content package for Migration -POC
+Content-Package-Roots: /apps/migration-packages,/apps/migration-vendor-p
+ ackages
+

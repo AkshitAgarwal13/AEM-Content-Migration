@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Bundle-Category: Migration -POC
+Bundle-Description: Core bundle for Migration -POC
+Bundle-ManifestVersion: 2
+Bundle-Name: Migration -POC - Core
+Bundle-SymbolicName: aem-content-migration.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Export-Package: com.aem.migration.core.filters;version="1.0";uses:="ja
+ vax.servlet",com.aem.migration.core.listeners;version="1.0";uses:="or
+ g.apache.sling.api.resource.observation",com.aem.migration.core.model
+ s;version="1.0";uses:="javax.annotation,org.apache.sling.api.resource
+ ,org.apache.sling.models.annotations,org.apache.sling.models.annotati
+ ons.injectorspecific",com.aem.migration.core.schedulers;version="1.0"
+ ,com.aem.migration.core.servlets;version="1.0";uses:="javax.servlet,o
+ rg.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.aem.migration.cor
+ e.filters;version="[1.0,2)",com.aem.migration.core.listeners;version=
+ "[1.0,2)",com.aem.migration.core.schedulers;version="[1.0,2)",com.day
+ .cq.dam.api;version="[1.28,2)",com.day.cq.wcm.api;version="[1.29,2)",
+ com.google.gson;version="[2.8,3)",javax.servlet;version="[3.1,4)",org
+ .apache.commons.collections;version="[3.2,4)",org.apache.commons.lang
+ 3;version="[3.10,4)",org.apache.sling.api;version="[2.3,3)",org.apach
+ e.sling.api.request;version="[2.4,3)",org.apache.sling.api.resource;v
+ ersion="[2.12,3)",org.apache.sling.api.resource.observation;version="
+ [1.2,2)",org.apache.sling.api.servlets;version="[2.3,3)",org.apache.s
+ ling.models.annotations;version="[1.5,2)",org.apache.sling.models.ann
+ otations.injectorspecific;version="[1.1,2)",org.jsoup;version="[1.15,
+ 2)",org.jsoup.nodes;version="[1.15,2)",org.jsoup.select;version="[1.1
+ 5,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.aem.migration.core.aem.dto,com.aem.migration.core
+ .aem.dto.components,com.aem.migration.core.constants,com.aem.migratio
+ n.core.services,com.aem.migration.core.services.impl,com.aem.migratio
+ n.core.utils,com.aem.migration.core.wordpress.dto
+Provide-Capability: osgi.service;objectClass:List<String>="com.aem.mig
+ ration.core.services.ContentProcessorService";uses:="com.aem.migratio
+ n.core.services",osgi.service;objectClass:List<String>="java.lang.Run
+ nable",osgi.service;objectClass:List<String>="javax.servlet.Filter";u
+ ses:="javax.servlet",osgi.service;objectClass:List<String>="javax.ser
+ vlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<Str
+ ing>="org.apache.sling.api.resource.observation.ResourceChangeListene
+ r";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.service;filter:="(objectClass=com.aem.migrati
+ on.core.services.ContentProcessorService)";effective:=active,osgi.ser
+ vice;filter:="(objectClass=org.apache.sling.api.resource.ResourceReso
+ lverFactory)";effective:=active,osgi.extender;filter:="(&(osgi.extend
+ er=osgi.component)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filte
+ r:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.aem.migration.core.filters.LoggingFilt
+ er.xml,OSGI-INF/com.aem.migration.core.listeners.SimpleResourceListen
+ er.xml,OSGI-INF/com.aem.migration.core.schedulers.SimpleScheduledTask
+ .xml,OSGI-INF/com.aem.migration.core.services.impl.ContentProcessorSe
+ rviceImpl.xml,OSGI-INF/com.aem.migration.core.servlets.ContentProcess
+ orServlet.xml,OSGI-INF/com.aem.migration.core.servlets.SimpleServlet.
+ xml
+Sling-Model-Classes: com.aem.migration.core.models.HelloWorldModel
+

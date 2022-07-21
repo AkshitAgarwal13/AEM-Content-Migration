@@ -1,0 +1,3 @@
+{
+  "sling.filter.pattern": "/content/migration/.*?/(category-page|product-page)"
+}

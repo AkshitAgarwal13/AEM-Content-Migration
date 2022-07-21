@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 18
+Implementation-Title: Migration -POC - UI content
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.aem.migration:aem-content-migration.ui.content:0
+ .0.1-SNAPSHOT
+Content-Package-Description: UI content package for Migration -POC
+Content-Package-Dependencies: com.aem.migration:aem-content-migration.ui
+ .apps:0.0.1-SNAPSHOT
+Content-Package-Dependencies-Locations: com.aem.migration:aem-content-mi
+ gration.ui.apps:0.0.1-SNAPSHOT=maven:com.aem.migration:aem-content-migr
+ ation.ui.apps:0.0.1-SNAPSHOT:zip
+Content-Package-Roots: /conf/migration,/content/dam/migration/asset.jpg,
+ /content/experience-fragments/migration,/content/migration
+

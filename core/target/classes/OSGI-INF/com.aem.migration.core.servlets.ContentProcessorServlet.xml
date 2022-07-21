@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.aem.migration.core.servlets.ContentProcessorServlet">
+  <property name="sling.servlet.methods" type="String" value="get"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/migrate-content"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="contentProcessor" interface="com.aem.migration.core.services.ContentProcessorService" field="contentProcessor"/>
+  <implementation class="com.aem.migration.core.servlets.ContentProcessorServlet"/>
+</scr:component>
